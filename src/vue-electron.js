@@ -1,7 +1,5 @@
-import apis from './apis'
-
 export default {
-  install (Vue, options) {
-    Vue.prototype.$electron = { ...apis }
+  install (Vue) {
+    Vue.prototype.$electron = require('electron')
   }
 }
