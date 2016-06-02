@@ -5,7 +5,7 @@ import VueElectron from '../../index.js'
 
 Vue.use(VueElectron)
 
-new Vue({
+window.app = new Vue({
   el: 'body',
   components: { App }
 })

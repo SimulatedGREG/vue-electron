@@ -4,8 +4,8 @@
   "author": "SimulatedGREG <simulatedgreg@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "webpack-dev-server --inline --hot --colors",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --colors"
   },
   "dependencies": {
     "vue": "^1.0.0",

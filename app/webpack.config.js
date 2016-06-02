@@ -44,7 +44,8 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  target: 'electron-renderer'
 }
 
 if (process.env.NODE_ENV === 'production') {
