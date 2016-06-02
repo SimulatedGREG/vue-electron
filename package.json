@@ -1,0 +1,35 @@
+{
+  "name": "vue-electron",
+  "version": "0.0.0",
+  "description": "Vue plugin to wrap electron APIs.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "electron-prebuilt": "^1.2.1",
+    "npm-run-all": "^2.1.1"
+  },
+  "scripts": {
+    "dev": "electron ./electron.js",
+    "start": "npm-run-all --parallel dev webpack",
+    "webpack": "cd app && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimulatedGREG/vue-electron.git"
+  },
+  "keywords": [
+    "vue",
+    "electron",
+    "api",
+    "wrapper"
+  ],
+  "author": "Greg Holguin <simulatedgreg@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimulatedGREG/vue-electron/issues"
+  },
+  "homepage": "https://github.com/SimulatedGREG/vue-electron#readme"
+}
