@@ -1,5 +1,5 @@
-export default {
-  install (Vue) {
+module.exports = {
+  install: function (Vue) {
     Vue.prototype.$electron = require('electron')
   }
 }
