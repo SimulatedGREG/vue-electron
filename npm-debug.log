@@ -1,0 +1,116 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/gregholguin/.nvm/versions/node/v5.10.0/bin/node',
+1 verbose cli   '/Users/gregholguin/.nvm/versions/node/v5.10.0/bin/npm',
+1 verbose cli   'unpublish',
+1 verbose cli   '1.0.1',
+1 verbose cli   '--force' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.0
+4 warn using --force I sure hope you know what you are doing.
+5 silly unpublish args[0] 1.0.1
+6 silly unpublish thing Result {
+6 silly unpublish   raw: '1.0.1',
+6 silly unpublish   scope: null,
+6 silly unpublish   name: '1.0.1',
+6 silly unpublish   rawSpec: '',
+6 silly unpublish   spec: 'latest',
+6 silly unpublish   type: 'tag' }
+7 verbose getPublishConfig null
+8 silly ls normalized 1.0.1
+9 silly gentlyRm /Users/gregholguin/.npm/1.0.1 is being purged
+10 verbose gentlyRm don't care about contents; nuking /Users/gregholguin/.npm/1.0.1
+11 silly mapToRegistry name 1.0.1
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: '1.0.1',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   name: '1.0.1',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/1.0.1
+16 verbose get GET as part of write; not caching result
+17 verbose request uri https://registry.npmjs.org/1.0.1?write=true
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 11:20:13 PM
+20 verbose request using bearer token for auth
+21 verbose request id 7c5c4bed77b33122
+22 http request GET https://registry.npmjs.org/1.0.1?write=true
+23 http 200 https://registry.npmjs.org/1.0.1?write=true
+24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 verbose headers   etag: '"DPOH4EUOM7EZG1E95TFJ08PB5"',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'content-encoding': 'gzip',
+24 verbose headers   'cache-control': 'max-age=0',
+24 verbose headers   'transfer-encoding': 'chunked',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Thu, 09 Jun 2016 04:20:14 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-sjc3130-SJC',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1465446014.016584,VS0,VE105',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"DPOH4EUOM7EZG1E95TFJ08PB5"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'content-encoding': 'gzip',
+25 silly get     'cache-control': 'max-age=0',
+25 silly get     'transfer-encoding': 'chunked',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Thu, 09 Jun 2016 04:20:14 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-sjc3130-SJC',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1465446014.016584,VS0,VE105',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose get saving 1.0.1 to /Users/gregholguin/.npm/registry.npmjs.org/1.0.1_3Fwrite_3Dtrue/.cache.json
+27 verbose correctMkdir /Users/gregholguin/.npm correctMkdir not in flight; initializing
+28 info unpublish No version specified, removing all
+29 verbose request uri https://registry.npmjs.org/1.0.1/-rev/4-b7b07d1eab0092206b97883391958087
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 11:20:14 PM
+32 verbose request using bearer token for auth
+33 http request DELETE https://registry.npmjs.org/1.0.1/-rev/4-b7b07d1eab0092206b97883391958087
+34 http 403 https://registry.npmjs.org/1.0.1/-rev/4-b7b07d1eab0092206b97883391958087
+35 verbose headers { 'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=300',
+35 verbose headers   'content-length': '99',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Thu, 09 Jun 2016 04:20:14 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-sjc3130-SJC',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1465446014.217080,VS0,VE82',
+35 verbose headers   vary: 'Accept-Encoding' }
+36 verbose request invalidating /Users/gregholguin/.npm/registry.npmjs.org/1.0.1 on DELETE
+37 verbose stack Error: you do not have permission to publish "1.0.1". Are you logged in as the correct user? : 1.0.1
+37 verbose stack     at makeError (/Users/gregholguin/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+37 verbose stack     at CachingRegistryClient.<anonymous> (/Users/gregholguin/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+37 verbose stack     at Request._callback (/Users/gregholguin/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+37 verbose stack     at Request.self.callback (/Users/gregholguin/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+37 verbose stack     at emitTwo (events.js:100:13)
+37 verbose stack     at Request.emit (events.js:185:7)
+37 verbose stack     at Request.<anonymous> (/Users/gregholguin/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+37 verbose stack     at emitOne (events.js:95:20)
+37 verbose stack     at Request.emit (events.js:182:7)
+37 verbose stack     at IncomingMessage.<anonymous> (/Users/gregholguin/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
+38 verbose statusCode 403
+39 verbose pkgid 1.0.1
+40 verbose cwd /Users/gregholguin/Documents/Projects/Personal/vue-electron
+41 error Darwin 15.5.0
+42 error argv "/Users/gregholguin/.nvm/versions/node/v5.10.0/bin/node" "/Users/gregholguin/.nvm/versions/node/v5.10.0/bin/npm" "unpublish" "1.0.1" "--force"
+43 error node v5.10.0
+44 error npm  v3.8.3
+45 error code E403
+46 error you do not have permission to publish "1.0.1". Are you logged in as the correct user? : 1.0.1
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]

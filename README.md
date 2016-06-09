@@ -3,6 +3,8 @@
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
+### Need a full boilerplate for creating electron apps built with vue? Make sure to check out electron-vue.
+[https://github.com/SimulatedGREG/electron-vue](https://github.com/SimulatedGREG/electron-vue)
 
 ## Installing
 Install using NPM

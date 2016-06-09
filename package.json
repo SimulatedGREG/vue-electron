@@ -1,6 +1,6 @@
 {
   "name": "vue-electron",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "The vue plugin that attaches electron APIs to the Vue object, making them accessable to all components.",
   "main": "index.js",
   "dependencies": {},
