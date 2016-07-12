@@ -1,4 +1,4 @@
-# Vue-electron
+# vue-electron
 > The vue plugin that wraps [electron](https://github.com/electron/electron) APIs to the Vue object.
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
