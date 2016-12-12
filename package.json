@@ -1,18 +1,10 @@
 {
   "name": "vue-electron",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The vue plugin that attaches electron APIs to the Vue object, making them accessible to all components.",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {
-    "electron-prebuilt": "^1.2.1",
-    "npm-run-all": "^2.1.1"
-  },
-  "scripts": {
-    "dev": "electron ./electron.js",
-    "start": "npm-run-all --parallel dev webpack",
-    "webpack": "cd app && npm run dev"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SimulatedGREG/vue-electron.git"
