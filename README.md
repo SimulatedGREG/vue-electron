@@ -8,7 +8,7 @@
 
 ## Installing
 Install using NPM
-```
+```sh
 npm install vue-electron --save
 ```
 

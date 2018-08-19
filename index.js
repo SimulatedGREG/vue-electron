@@ -1,5 +1,13 @@
+const electron = require('electron')
+
 module.exports = {
   install: function (Vue) {
-    Vue.prototype.$electron = require('electron')
-  }
+    Object.defineProperties(Vue.prototype, {
+      $electron: {
+        get () {
+          return electron
+        },
+      },
+    })
+  },
 }
